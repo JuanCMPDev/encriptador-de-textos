@@ -1,5 +1,3 @@
-Aquí tienes el contenido en formato Markdown sin interpretaciones adicionales:
-
 ```markdown
 # Encriptador de Texto | ORACLE-ONE
 
