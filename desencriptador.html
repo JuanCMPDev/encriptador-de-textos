@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desencriptador de texto | ORACLE-ONE</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class='navbar'>
+      <div class='logo-container'>
+        <img src="assets/images/logo.png" alt="Logo de ORACLE-ONE">
+      </div>
+      <div class="navbar-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="navbar-container">
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="encriptador.html">Encriptador</a></li>
+          <li><a href="desencriptador.html">Desencriptador</a></li>
+        </ul>
+      </div>
+      <div class="navbar-menu">
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="encriptador.html">Encriptador</a></li>
+          <li><a href="desencriptador.html">Desencriptador</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <section class="encryption-section">
+        <div class="input-container">
+          <label for="encryptedText">Texto encriptado:</label>
+          <input type="text" id="encryptedText" placeholder="Introduce el texto encriptado aquí">
+          <button onclick="decryptText()">Desencriptar</button>
+        </div>
+        <div class="output-card">
+          <h2>Texto Desencriptado:</h2>
+          <p id="outputText">Aquí aparecerá el texto desencriptado.</p>
+          <button onclick="copyToClipboard('outputText')">Copiar</button>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
